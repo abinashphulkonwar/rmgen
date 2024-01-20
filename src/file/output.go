@@ -23,7 +23,7 @@ func NewOutput() *Output {
 }
 func (o *Output) open() {
 
-	connection, err := os.OpenFile(o.file_name(), os.O_CREATE|os.O_APPEND, 0666)
+	connection, err := os.OpenFile(o.file_name(), os.O_CREATE|os.O_APPEND|os.O_TRUNC, 0666)
 	connection.Truncate(0)
 	applicationerror.ErrorChecker(&err)
 	o.f = connection

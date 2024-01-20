@@ -51,12 +51,12 @@ func (c *Config) Parse() *[]Field {
 	var temp []Field
 	err = json.Unmarshal(buf[0:index], &temp)
 	applicationerror.ErrorChecker(&err)
-
+	println("==================")
 	for _, v := range temp {
 		println("field name: ", v.Name, " type: ", v.Type)
-		println("==================")
 		c.fields = append(c.fields, v)
 	}
+	println("==================")
 
 	return &c.fields
 
