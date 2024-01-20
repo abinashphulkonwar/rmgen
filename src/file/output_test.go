@@ -12,7 +12,7 @@ import (
 
 func TestOutput(t *testing.T) {
 	output := file.NewOutput()
-	output.Open()
+	output.Init()
 	buf := new(bytes.Buffer)
 	enc := gob.NewEncoder(buf)
 	if err := enc.Encode(*gofakeit.Address()); err != nil {

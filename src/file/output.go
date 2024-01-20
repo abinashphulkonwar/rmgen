@@ -21,12 +21,16 @@ func NewOutput() *Output {
 	OutputPointer = pointer
 	return pointer
 }
+func (o *Output) open() {
 
-func (o *Output) Open() {
-
-	connection, err := os.Create(o.file_name())
+	connection, err := os.OpenFile(o.file_name(), os.O_CREATE|os.O_APPEND, 0666)
+	connection.Truncate(0)
 	applicationerror.ErrorChecker(&err)
 	o.f = connection
+}
+
+func (o *Output) Init() {
+	o.open()
 }
 
 func (o *Output) Write(data *[]byte) int {
@@ -36,6 +40,9 @@ func (o *Output) Write(data *[]byte) int {
 }
 
 func (o *Output) file_name() string {
+	if os.Getenv("mode") == "test" {
+		return "output.csv"
+	}
 	id := uuid.New().String()
 	if id == "" {
 		hasher := md5.New()
@@ -43,7 +50,7 @@ func (o *Output) file_name() string {
 		hasher.Write([]byte(time_now))
 		id = hex.EncodeToString(hasher.Sum(nil))
 	}
-	return id[0:8] + ".txt"
+	return id[0:8] + ".csv"
 }
 
 func (o *Output) Close() {
