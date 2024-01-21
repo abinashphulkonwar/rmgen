@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	commandshandler "github.com/abinashphulkonwar/go-random-data-generation/src/commands_handler"
+	commandshandler "github.com/abinashphulkonwar/rmgen/src/commands_handler"
 	"github.com/urfave/cli/v2"
 )
 

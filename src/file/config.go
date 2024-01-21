@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"os"
 
-	applicationerror "github.com/abinashphulkonwar/go-random-data-generation/src/application_error"
+	applicationerror "github.com/abinashphulkonwar/rmgen/src/application_error"
 )
 
 const (

@@ -3,7 +3,7 @@ package file_test
 import (
 	"testing"
 
-	"github.com/abinashphulkonwar/go-random-data-generation/src/file"
+	"github.com/abinashphulkonwar/rmgen/src/file"
 )
 
 func TestCongig(t *testing.T) {

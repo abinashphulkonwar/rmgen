@@ -5,8 +5,8 @@ import (
 	"encoding/gob"
 	"testing"
 
-	applicationerror "github.com/abinashphulkonwar/go-random-data-generation/src/application_error"
-	"github.com/abinashphulkonwar/go-random-data-generation/src/file"
+	applicationerror "github.com/abinashphulkonwar/rmgen/src/application_error"
+	"github.com/abinashphulkonwar/rmgen/src/file"
 	"github.com/brianvoe/gofakeit/v6"
 )
 

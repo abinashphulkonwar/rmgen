@@ -1,7 +1,7 @@
 package random
 
 import (
-	"github.com/abinashphulkonwar/go-random-data-generation/src/file"
+	"github.com/abinashphulkonwar/rmgen/src/file"
 	"github.com/brianvoe/gofakeit/v6"
 )
 
@@ -19,7 +19,7 @@ func Generated(length_of_random_data int) {
 	separator := []byte(",")
 	length := len((*file.ConfigPointer.Get()))
 	for index, v := range *file.ConfigPointer.Get() {
-		buf = append(buf, []byte(v.Type)...)
+		buf = append(buf, []byte(v.Name)...)
 		if index < length-1 {
 			buf = append(buf, separator...)
 		}

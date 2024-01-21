@@ -1,4 +1,4 @@
-module github.com/abinashphulkonwar/go-random-data-generation
+module github.com/abinashphulkonwar/rmgen
 
 go 1.20
 

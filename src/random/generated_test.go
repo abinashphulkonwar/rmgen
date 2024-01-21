@@ -4,8 +4,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/abinashphulkonwar/go-random-data-generation/src/file"
-	"github.com/abinashphulkonwar/go-random-data-generation/src/random"
+	"github.com/abinashphulkonwar/rmgen/src/file"
+	"github.com/abinashphulkonwar/rmgen/src/random"
 )
 
 func TestRandomGeneration(t *testing.T) {

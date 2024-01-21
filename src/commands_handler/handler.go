@@ -1,8 +1,8 @@
 package commandshandler
 
 import (
-	"github.com/abinashphulkonwar/go-random-data-generation/src/file"
-	"github.com/abinashphulkonwar/go-random-data-generation/src/random"
+	"github.com/abinashphulkonwar/rmgen/src/file"
+	"github.com/abinashphulkonwar/rmgen/src/random"
 )
 
 func Handler(file_path string, count int) {

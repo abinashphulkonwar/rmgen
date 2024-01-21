@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	applicationerror "github.com/abinashphulkonwar/go-random-data-generation/src/application_error"
+	applicationerror "github.com/abinashphulkonwar/rmgen/src/application_error"
 	"github.com/google/uuid"
 )
 

@@ -1,10 +1,10 @@
 [
     {
-        "field_name": "email",
+        "field_name": "user_email",
         "type": "email"
     },
     {
-        "field_name": "name",
+        "field_name": "user name",
         "type": "name"
     }
 ]
