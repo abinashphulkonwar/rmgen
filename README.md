@@ -74,4 +74,4 @@ Feel free to contribute by opening issues or pull requests. Any feedback or sugg
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/your-username/rmgen/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/abinashphulkonwar/rmgen/blob/main/LICENSE) file for details.
