@@ -16,5 +16,5 @@ func TestRandomGeneration(t *testing.T) {
 	output.Init()
 	defer output.Close()
 	defer config.Close()
-	random.Generated()
+	random.Generated(10)
 }
