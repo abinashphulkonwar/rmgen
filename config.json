@@ -1,0 +1,10 @@
+[
+    {
+        "field_name": "email",
+        "type": "email"
+    },
+    {
+        "field_name": "name",
+        "type": "name"
+    }
+]

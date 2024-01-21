@@ -40,7 +40,10 @@ func NewConfig(path string) *Config {
 }
 
 func (c *Config) Init() {
-	connection, err := os.OpenFile(c.path, os.O_RDWR|os.O_CREATE, 0666)
+	connection, err := os.OpenFile(c.path, os.O_RDONLY, 0666)
+	if os.IsExist(err) {
+		println("file not existed")
+	}
 	applicationerror.ErrorChecker(&err)
 	c.f = connection
 }
