@@ -12,8 +12,8 @@ func main() {
 	var file_path string
 	var count int
 	app := &cli.App{
-		Name:  "random data generation",
-		Usage: "make an explosive entrance",
+		Name:  "rmgen",
+		Usage: "generate ramdon data",
 
 		Flags: []cli.Flag{
 			&cli.StringFlag{
@@ -28,6 +28,9 @@ func main() {
 				Aliases:     []string{"c"},
 				Destination: &count,
 			},
+		},
+		Action: func(c *cli.Context) error {
+			return nil
 		},
 	}
 
