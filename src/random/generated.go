@@ -7,7 +7,7 @@ import (
 
 const MAX_FILE_SIZE = 1024 * 1024 * 5
 
-func Generated() {
+func Generated(length_of_random_data int) {
 	if file.OutputPointer == nil {
 		panic("Output pointer is nil")
 	}
@@ -25,7 +25,6 @@ func Generated() {
 		}
 	}
 	buf = append(buf, new_line...)
-	length_of_random_data := 10000
 	for i := 0; i < length_of_random_data; i++ {
 		for index, v := range *file.ConfigPointer.Get() {
 			text := generated_handler(v.Type)
